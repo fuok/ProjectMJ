@@ -36,9 +36,9 @@ public class Util
 				return pais [i] == d;
 			});
 
-			//判断是否能做将牌(暴力尝试将头)
+			//判断是否能做将牌(暴力尝试雀头)
 			if (ds.Count >= 2) {
-				Debug.Log ("将头是：" + ds [0]);
+				Debug.Log ("雀头是：" + ds [0]);
 				//移除两张将牌
 				paiT.Remove (pais [i]);
 				paiT.Remove (pais [i]);
@@ -58,7 +58,7 @@ public class Util
 	}
 
 	/// <summary>
-	/// 用递归判断牌型是否构成胡牌（已经不包括将头）
+	/// 用递归判断牌型是否构成胡牌（已经不包括雀头）
 	/// </summary>
 	/// <returns><c>true</c>, if pai pan din was hued, <c>false</c> otherwise.</returns>
 	/// <param name="mahs">Mahs.</param>

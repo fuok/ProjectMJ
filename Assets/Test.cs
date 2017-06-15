@@ -26,6 +26,16 @@ public class Test : MonoBehaviour
 	{
 		if (GUI.Button (new Rect (50f, 50f, 200f, 50f), "Check")) {
 			Util.IsCanHU (Mah, Ting);
+			
+			/////////
+			ShouPai pai = new ShouPai ();
+			pai.QueTou.SetValue (100, 0);
+			pai.QueTou.SetValue (101, 1);
+//			pai.QueTou [2] = 102;
+			
+			pai.JianKe.Add (new int[]{ 1, 2 });
+//			print ("haha" + pai.FengKe.Count);
 		}
+
 	}
 }
